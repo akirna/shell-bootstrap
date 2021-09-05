@@ -5,6 +5,7 @@ export JENV_ROOT=/usr/local/opt/jenv
 if which jenv > /dev/null; then eval "$(jenv init -)"; fi
 
 # ls text colors
+# This can be overridden per shell in its respective config file (rc/profile)
 export CLICOLOR=1
 # Set the text color for each file type.
 # Format: XX (foreground color, background color)

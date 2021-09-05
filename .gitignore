@@ -1,1 +1,3 @@
+# Ignore specific configs
+# These will typically have the path `settings/<local_file_only>`
 amex
