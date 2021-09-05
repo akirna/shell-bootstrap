@@ -11,14 +11,9 @@ export LSCOLORS=ExxxxxxxCxxxxxxxxxxxxx
 
 # Prompt style
 # export PS1='\h:\W \u\$ '                 # default
-export PS1='🚀 \W \u 🌌 $ '                    # dreamy
-# export PS1='😁🍟 \W \u\$ '                    # lol
-# export PS1='💰 \W \u \$\$\$ '         # $$$$$
-# export PS1='🇺🇸  \W \u 🗽 '                  # America!
-# export PS1='🇺🇸  \W \u 🗽 \033[1D'                  # America!
-# export PS1="🇺\[🇸\]  \W \u 🗽 "                  # America!
-# export PS1="\xf0\x9f\x87\xba\[\xf0\x9f\x87\xb8\] "                  # America!
-# export PS1='\001\xf0\x9f\x87\xba\xf0\x9f\x87\xb8\002 \W \u 🗽 '                  # America!
+export PS1='🚀 \W \u 🌌 $ '                 # space
+# export PS1='😁🍟 \W \u\$ '                # fries
+# export PS1='💰 \W \u \$\$\$ '             # $$$$$
 
 # .bashrc
 [[ -s ~/.bashrc ]] && source ~/.bashrc		# Used to source aliases from .bashrc if exists and not empty
