@@ -1,3 +1,8 @@
 # Ignore specific configs
 # These will typically have the path `settings/<local_file_only>`
+# You can omit the path component since git will match the file in any subdirectory
 amex
+
+# Ignore any file with the suffix "local" (e.g. aliases-local)
+# This is useful for adding local aliases, functions, or environment variables
+*local
