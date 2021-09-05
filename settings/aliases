@@ -12,9 +12,6 @@ alias f='open -a Finder ./'			# f:	Opens current directory in MacOS Finder
 #alias ll='ls -FGlAhp'				# Preferred 'ls' implementation
 #alias less='less -FSRXc'			# Preferred 'less' implementation
 
-# cd shortcuts
-alias go='cd /Users/akirna/Documents/Amex\ Go/amexgo-ios'
-
 # Parent directory shortcuts
 alias ..='cd ../'				# Go back 1 directory level
 alias ...='cd ../../'				# Go back 2 directory levels
