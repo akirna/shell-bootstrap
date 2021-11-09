@@ -4,7 +4,6 @@
 alias ll='ls -la'
 alias c='clear'
 alias rsync='rsync -az --progress'
-alias coffee='caffeinate -i -w $(pgrep AnyConnect) &'
 alias f='open -a Finder ./'			# f:	Opens current directory in MacOS Finder
 #alias cp='cp -iv'				# Preferred 'cp' implementation
 #alias mv='mv -iv'				# Preferred 'mv' implementation
