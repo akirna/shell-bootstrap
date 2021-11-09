@@ -1,6 +1,6 @@
 ## Functions
 
-# mcd: Makes new dir and jumps inside
+# mcd - Makes new dir and jumps inside
 mcd () { mkdir -p "$1" && cd "$1"; }
 
 # ex - archive extractor
@@ -25,4 +25,16 @@ ex () {
   else
     echo "'$1' is not a valid file"
   fi
+}
+
+# coffee <on/off> - Prevents the display from sleeping
+coffee () {
+  case $1 in
+  on)
+    nohup caffeinate -d > /dev/null & ;;
+  off)
+    pkill caffeinate ;;
+  *)
+    echo "Error - proper usage: coffee <on/off>" ;;
+  esac
 }
