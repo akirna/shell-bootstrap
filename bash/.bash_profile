@@ -2,7 +2,8 @@
 
 # Configure shell (aliases, functions, environment variables, third-party tools)
 # Sources each file, if exists and not empty
-for config in ~/.config/settings/*; do [[ -s "$config" ]] && source "$config"; done
+for config in ~/.shell-config/settings-global/*; do [[ -s "$config" ]] && source "$config"; done
+for config in ~/.shell-config/settings-local/*; do [[ -s "$config" ]] && source "$config"; done
 
 # ls text colors
 export CLICOLOR=1
