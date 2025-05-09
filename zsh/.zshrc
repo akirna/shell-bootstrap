@@ -1,9 +1,8 @@
 ## zsh User Config
 
-# Configure shell (aliases, functions, environment variables, third-party tools)
-# Sources each file, if exists and not empty
-for config in ~/.shell-config/settings-global/*; do [[ -s "$config" ]] && source "$config"; done
-for config in ~/.shell-config/settings-local/*; do [[ -s "$config" ]] && source "$config"; done
+# Configure shell (aliases, functions, environment variables, third-party tools, etc.)
+# Recursively source every child file in ~/.shell-config/settings, if exists and not empty
+for config in ~/.shell-config/settings/**/*(.); do [[ -s "$config" ]] && source "$config"; done
 
 # Consider installing zsh plugins: zsh-syntax-highlighting, zsh-autosuggestions, autojump
 

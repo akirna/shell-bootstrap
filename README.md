@@ -13,12 +13,12 @@ cd .shell-config
 ```
 
 ## Customizing
-1. Modify any of the default configs in **settings-global/** or add your own (these **are** tracked by git and sync across your machines)
-1. Create a directory named **settings-local/** and add custom, local configs (these **are not** tracked by git and **do not** sync across your machines)
+1. Modify any of the default configs in **settings/global/** or add your own (these **are** tracked by git and synced across your machines)
+1. Create the directory **settings/local/** and add custom, local configs (these **are not** tracked by git and **do not** sync across your machines)
 1. Modify shell-specific configs in their respective directories (e.g. **zsh/** and **bash/**)
 
 ## Bootstrapping
-Run the bootstrap script to apply your configs during initial setup and after making any changes under **zsh/** or **bash/**
+Run the bootstrap script to apply your configs during initial setup **and** after making any changes in **zsh/** or **bash/**
 ``` zsh
 ./bootstrap.sh
 ```
@@ -28,7 +28,7 @@ Remember to only make changes to shell configs (**zsh/.zshrc** and **bash/.bash_
 
 Add file names to **.gitignore** for configs that are specific to a single machine. Or, create a new directory named with the suffix "local/" and store them there.
 
-As you make changes to your global configs, remember to commit and push your changes so you can access them on all your machines. Pull updates from your other machines and run the bootstrap script to apply them.
+As you make changes to your global and shell-specific configs, remember to commit and push your changes so you can access them on all your machines. Pull updates from your other machines and run the bootstrap script to apply them.
 
 ## Feedback
 Open an issue for any bugs and message me with any feedback 🙂. Thanks!

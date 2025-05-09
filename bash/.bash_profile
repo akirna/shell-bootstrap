@@ -1,18 +1,17 @@
 ## bash User Config
 
-# Configure shell (aliases, functions, environment variables, third-party tools)
-# Sources each file, if exists and not empty
-for config in ~/.shell-config/settings-global/*; do [[ -s "$config" ]] && source "$config"; done
-for config in ~/.shell-config/settings-local/*; do [[ -s "$config" ]] && source "$config"; done
+# Configure shell (aliases, functions, environment variables, third-party tools, etc.)
+# Recursively source every child file in ~/.shell-config/settings, if exists and not empty
+for config in ~/.shell-config/settings/**/*(.); do [[ -s "$config" ]] && source "$config"; done
 
-# Prompt style
+# Prompt
 # export PS1='\h:\W \u\$ '                 # default
 export PS1='🚀 \W \u 🌌 $ '                 # space
 # export PS1='😁🍟 \W \u\$ '                # fries
 # export PS1='💰 \W \u \$\$\$ '             # $$$$$
 
-# .bashrc
-[[ -s ~/.bashrc ]] && source ~/.bashrc		# Used to source aliases from .bashrc if exists and not empty
+# Source .bashrc, if exists and not empty
+[[ -s ~/.bashrc ]] && source ~/.bashrc
 
 # Path
 # export PATH="/usr/local/mysql/bin:$PATH"
