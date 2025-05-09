@@ -5,11 +5,6 @@
 for config in ~/.shell-config/settings-global/*; do [[ -s "$config" ]] && source "$config"; done
 for config in ~/.shell-config/settings-local/*; do [[ -s "$config" ]] && source "$config"; done
 
-# ls text colors
-export CLICOLOR=1
-# directory, symbolic link, socket, pipe, exec, block special, char special, exec w/setuid, exec w/setgid, dir w/sticky, dir w/o sticky
-export LSCOLORS=ExxxxxxxCxxxxxxxxxxxxx
-
 # Prompt style
 # export PS1='\h:\W \u\$ '                 # default
 export PS1='🚀 \W \u 🌌 $ '                 # space
